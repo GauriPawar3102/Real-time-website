@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <style>
+    body{
+      font-family: "Dosis", sans-serif;
+    }
+    h1{
+      background-color: rgb(154, 154, 255);
+    }
+    .container{
+      border: 2px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  
+<form action="php/mail.php" method="post">
+  <div class="container my-3">
+    <h1 align="center">Registration Form</h1>
+    <div class="mb-3">
+      <label for="firstName" class="form-label">First Name</label>
+      <input type="text" class="form-control" id="firstName" name="firstName" aria-describedby="emailHelp">
+    </div>
+    <br>
+    <div class="mb-3">
+      <label for="lastName" class="form-label">Last Name</label>
+      <input type="text" class="form-control" id="lastName" name="lastName" aria-describedby="emailHelp">
+    </div>
+    <br>
+    <div class="mb-3">
+      <div class="form-group">
+        <label for="email" class="form-label">Gender</label>
+        <div>
+        <label for="male"><input type="radio" name="gender" id="male" value="m"> Male</label>
+        <br>
+        <label for="female"><input type="radio" name="gender" id="" value="f"> Female</label>
+        <br>
+        <label for="others"><input type="radio" name="gender" id="" value="o"> Others</label></div>
+        </div>
+      
+      
+      
+    </div>
+    <br>
+    <div class="mb-3">
+      <label for="phoneNumber" class="form-label">Phone Number</label>
+      <input type="text" class="form-control" id="phoneNumber" aria-describedby="emailHelp" name="phoneNumber">
+    </div>
+    <br>
+    <input type="submit" class="btn btn-primary" >
+  </div>
+  
+</form>
+</body>
+</html>
